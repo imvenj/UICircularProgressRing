@@ -16,5 +16,5 @@ let package = Package(
             name: "UICircularProgressRing",
             path: "src/UICircularProgressRing"),
     ],
-    swiftLanguageVersions: [.v4_2]
+    swiftLanguageVersions: [.v4_2, .v5, v5_1]
 )
