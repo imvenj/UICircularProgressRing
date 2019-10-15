@@ -9,6 +9,7 @@
 /**
  * This file includes internal extensions.
  */
+import UIKit
 
 /// Helper extension to allow removing layer animation based on AnimationKeys enum
 extension CALayer {

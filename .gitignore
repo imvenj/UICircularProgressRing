@@ -23,3 +23,5 @@ xcuserdata/
 *.xcscmblueprint
 .DS_Store
 UICircularProgressRing.framework.zip
+
+.swiftpm/xcode
