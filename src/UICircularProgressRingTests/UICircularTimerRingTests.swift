@@ -35,11 +35,12 @@ class UICircularTimerRingTests: XCTestCase {
     func testPauseTimer() {
         let pauseExpectation = self.expectation(description: "pauses and gives elapsed time")
 
-        timerRing.startTimer(to: 0.2) { state in
+        timerRing.startTimer(to: 0.5) { state in
             switch state {
             case .finished, .continued:
                 XCTFail()
-            case .paused:
+            case .paused(let elapsedTime):
+                XCTAssertNotEqual(elapsedTime, 0.0)
                 pauseExpectation.fulfill()
             }
         }
